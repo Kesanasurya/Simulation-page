@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background: #140d07;
+  background: #ba7171;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -26,33 +26,40 @@ h1, h2 {
   color: #2e5378;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.images-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-ul li {
-  background: #e6f7ff; /* Light blue background for list items */
-  margin: 5px 0;
+.left-column, .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between the images */
+}
+
+.image-item {
+  background: #e6f7ff;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 14px; /* Smaller text */
+  text-align: center;
 }
 
-ul li img {
-  width: 150px; /* Larger image */
-  height: 150px; /* Larger image */
-  margin-right: 10px;
+.image-item img {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  margin-bottom: 10px;
 }
 
 footer {
   background: #0073e6;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0; /* Smaller height */
   position: fixed;
   bottom: 0;
   width: 100%;
